@@ -31,7 +31,7 @@ module tt_um_kbieganski_adder4b #( parameter MAX_COUNT = 10_000_000 ) (
 
     wire [4:0] c;
 
-    fulladder fa1(ui_in[0], ui_in[4], 0,    uo_out[0], c[0]);
+    fulladder fa1(ui_in[0], ui_in[4], 1'b0, uo_out[0], c[0]);
 
     fulladder fa2(ui_in[1], ui_in[5], c[0], uo_out[1], c[1]);
 
