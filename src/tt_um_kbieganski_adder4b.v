@@ -41,4 +41,8 @@ module tt_um_kbieganski_adder4b #( parameter MAX_COUNT = 10_000_000 ) (
 
     assign uo_out[4] = c[3];
 
+    assign uo_out[7:5] = 3'b0;
+    assign uio_out = 7'b0;
+    assign uio_oe = 7'b0;
+
 endmodule
